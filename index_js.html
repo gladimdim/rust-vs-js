@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Rendering 10000 elements in JS</title>
+</head>
+<script>
+    async function start() {
+        const response = await fetch("data.json");
+        const json = await response.json();
+
+        const container = document.createElement("div");
+        json.items.reports.forEach((item) => {
+            const div = document.createElement("div");
+            div.textContent = item.text;
+            container.appendChild(div);
+        });
+
+        document.querySelector("#container").appendChild(container);
+    }
+</script>
+
+<body>
+    <button onclick="start()">Fetch Data</button>
+    <div id="container"></div>
+</body>
+
+</html>
