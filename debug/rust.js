@@ -383,7 +383,7 @@ __exports.__wbg_new_5dc66f71c54d38f0 = function(arg0, arg1) {
         }
 
     };
-    cbarg0.f = wasm.__wbg_function_table.get(104);
+    cbarg0.f = wasm.__wbg_function_table.get(105);
     cbarg0.a = arg0;
     cbarg0.b = arg1;
     try {
@@ -514,9 +514,9 @@ __exports.__wbindgen_cb_drop = function(i) {
     return 0;
 };
 
-__exports.__wbindgen_closure_wrapper336 = function(a, b, _ignored) {
-    const f = wasm.__wbg_function_table.get(17);
-    const d = wasm.__wbg_function_table.get(18);
+__exports.__wbindgen_closure_wrapper613 = function(a, b, _ignored) {
+    const f = wasm.__wbg_function_table.get(28);
+    const d = wasm.__wbg_function_table.get(29);
     const cb = function(arg0) {
         this.cnt++;
         let a = this.a;

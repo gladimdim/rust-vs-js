@@ -19,7 +19,7 @@ impl Default for Model {
     }
 }
 fn get_data(state: seed::App<Msg, Model>) -> impl Future<Item = (), Error = JsValue> {
-    let url = "/data.json";
+    let url = "data.json";
 
     Request::new(url)
         .method(Method::Get)
