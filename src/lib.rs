@@ -67,9 +67,8 @@ fn view(state: seed::App<Msg, Model>, model: Model) -> El<Msg> {
                 Some(response) => {
                     let result: Vec<El<Msg>> = response
                         .items
-                        .reports
                         .into_iter()
-                        .map(|node: model::ModelNode| div![node.text])
+                        .map(|node: model::ModelNode| div![node.long_description])
                         .collect();
                     result
                 }

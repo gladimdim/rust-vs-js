@@ -9,9 +9,9 @@
         const json = await response.json();
 
         const container = document.createElement("div");
-        json.items.reports.forEach((item) => {
+        json.items.forEach((item) => {
             const div = document.createElement("div");
-            div.textContent = item.text;
+            div.textContent = item.long_description;
             container.appendChild(div);
         });
 
