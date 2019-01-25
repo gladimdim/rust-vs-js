@@ -2,8 +2,6 @@
 
 **WHAT IS FASTER RENDERING 10000 DIVS FROM JSON**
 
-I decided to benchmark some real life examples from my app.
-
 Benchmark does following:
 
 * Fetches JSON file of size 7Mb (from disk cache)
